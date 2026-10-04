@@ -1,6 +1,136 @@
-.circle-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #EDF2F7;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+
+    gap: 30px;
+
+    max-width: 1100px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF
+}
+
+header {
+    grid-area: header;
+    background-color: #2C5282; 
+    
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px; 
+    font-family: Georgia, 'Times New Roman',
+    Times, serif;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+article {
+    display: flow-root;
+
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #000000;
+}
+
+article h2{
+    font-size: 32px;
+    color: #276749;
+}
+
+article h4{
+    color: #4A5568;
+}
+article img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+article:last-of-type{border-bottom: none;}
+
+aside h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside li{
+    color: #2B6CB0
+}
+
+.about-heading{
+    color: #000000;
+}
+
+.social-archive-heading{
+    color: #276749;
+}
+
+.social-archives-link{
+    color: #2B6CB0;
+}
+
+.about-text{
+    background-color: #E2E8F0; 
+    padding: 20px 20px 20px 20px 
 }
